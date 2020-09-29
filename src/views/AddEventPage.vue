@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// import { uuid } from "vue-uuid";
 export default {
   name: "AddEventPage",
   data() {
