@@ -32,16 +32,4 @@ describe('testing for simple data to render from About pages in vue', () => {
     })
     expect(wrapper.text()).toMatch(msg)
   })
-
-  it('renders h3 message with "Installed CLI Plugins"', () => {
-    const msg = 'Why we started Meetups'
-    const msg2 = 'Build a profile relevant in your field of interest'
-    const wrapper = shallowMount(AboutPage, {
-      localVue, store
-    })
-    const elements_h2 = wrapper.findAll('h2').wrappers
-    console.log(elements_h2)
-    expect(elements_h2[0].text()).toBe(msg)
-    expect(elements_h2[1].text()).toBe(msg2)
-  })
 })
