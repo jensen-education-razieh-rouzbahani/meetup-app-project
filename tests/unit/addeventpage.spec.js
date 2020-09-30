@@ -38,7 +38,6 @@ describe("App.vue", () => {
             state,
             actions
         })
-
     })
 
     it("renders a child component AboutPage via routing", async () => {

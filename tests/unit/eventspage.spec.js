@@ -19,7 +19,7 @@ describe("App.vue", () => {
         }
 
         actions = {
-
+            loadEvents: jest.fn(),
         }
 
         store = new Vuex.Store({
