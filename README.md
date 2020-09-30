@@ -1,6 +1,6 @@
 # meetup-app-project
 
-# Docker ***
+# Docker --------------------------------------
 ## Build an image
 ```
 docker build -t meetup-app-projekt .
@@ -13,8 +13,8 @@ docker run -it -p 8081:8080 --rm --name docker-container meetup-app-projekt
 ```
 docker ps
 ```
-# Heroku ************************************************
-        
+# Heroku --------------------------------------
+
 ## Login heroku
 ```
 heroku login
