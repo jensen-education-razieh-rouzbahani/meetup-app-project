@@ -23,15 +23,15 @@ heroku login
 ```
 heroku container:login
 ```
-## Build image for heroku
+## Build images for heroku
 ```
 docker build -t registry.heroku.com/meetup-app-project/web .
 ```
-## Push image to heroku
+## Push images to heroku
 ```
 docker push registry.heroku.com/meetup-app-project/web
 ```
-## Release image on heroku
+## Release images on heroku
 ```
 heroku container:release --app meetup-app-project web
 ```
