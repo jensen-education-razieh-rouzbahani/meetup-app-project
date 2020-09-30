@@ -29,7 +29,6 @@ describe("App.vue", () => {
 
     })
 
-
     it("renders a child component EventsPage via routing", async () => {
         const router = new VueRouter({ routes })
         const wrapper = mount(App, {

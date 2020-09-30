@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h1 class="home-header">Meetups at one place</h1>
     <h1 class="home-title">{{ message }}</h1>
     <div class="events-list">
       <ul>
@@ -33,7 +32,7 @@ export default {
   components: {},
   data() {
     return {
-      message: "MEETUPS IN STOCKHOLM",
+      message: "Welcome to Meetups in Stockholm",
     };
   },
   mounted() {
@@ -62,20 +61,7 @@ export default {
     top: 0px;
   }
 }
-.home-header {
-  width: 300px;
-  height: 30px;
-  font-size: 32px;
-  font-weight: bolder;
-  opacity: 0.6;
-  color: whitesmoke;
-  margin: 10px 0;
-  position: relative;
-  animation-name: header1;
-  animation-duration: 6s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
-}
+
 .home-title {
   width: 800px;
   height: 400px;
