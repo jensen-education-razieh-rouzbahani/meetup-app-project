@@ -1,4 +1,4 @@
-import { mount, createLocalVue } from "@vue/test-utils"
+import { mount, createLocalVue, shallowMount } from "@vue/test-utils"
 import App from "@/App.vue"
 import VueRouter from "vue-router"
 import AboutPage from "@/views/AboutPage.vue"
@@ -19,7 +19,7 @@ describe("App.vue", () => {
         }
 
         actions = {
-
+            loadEvents: jest.fn()
         }
 
         store = new Vuex.Store({
@@ -41,5 +41,10 @@ describe("App.vue", () => {
         await wrapper.vm.$nextTick()
 
         expect(wrapper.findComponent(AboutPage).exists()).toBe(true)
+    })
+
+    it('renders a header with name "About us"', () => {
+        const wrapper = shallowMount(AboutPage)
+        expect(wrapper.find('h1').text()).toBe('About us')
     })
 })
