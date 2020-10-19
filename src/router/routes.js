@@ -1,48 +1,29 @@
-import HomePage from '../views/HomePage.vue'
-import AboutPage from '../views/AboutPage.vue'
-import EventsPage from '@/views/EventsPage.vue'
-import ContactPage from '@/views/ContactPage.vue'
-import SignupPage from '@/views/SignupPage.vue'
-import AddEventPage from '@/views/AddEventPage.vue'
-import EventDescription from '@/views/EventDescription.vue'
-
-
+import Home from "../views/Home.vue";
+import Description from "../views/Description.vue";
+import Attending from "../views/Attending.vue";
+import History from "../views/History.vue";
 
 const routes = [
-    {
-        path: '/',
-        name: 'HomePage',
-        component: HomePage
-    },
-    {
-        path: '/about',
-        name: 'AboutPage',
-        component: AboutPage
-    },
-    {
-        path: '/signup',
-        name: 'SignupPage',
-        component: SignupPage
-    },
-    {
-        path: '/contact',
-        name: 'ContactPage',
-        component: ContactPage
-    },
-    {
-        path: '/events',
-        name: 'EventsPage',
-        component: EventsPage
-    },
-    {
-        path: '/event/:id',
-        name: 'EventDescription',
-        component: EventDescription
-    },
-    {
-        path: '/addevent',
-        name: 'AddEventPage',
-        component: AddEventPage
-    },
-]
+  {
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/description/:id",
+    name: "Description",
+    component: Description,
+  },
+  {
+    path: "/attending",
+    name: "Attending",
+    component: Attending,
+  },
+  {
+    path: "/history",
+    name: "History",
+    component: History,
+  },
+];
+
 export default routes;
