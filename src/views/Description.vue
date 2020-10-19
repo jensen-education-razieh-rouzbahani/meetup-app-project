@@ -56,10 +56,8 @@ export default {
 
 .description-view {
   height: 100vh;
-  /* background: purple; */
 }
 .discription {
-  /* background: rgb(18, 104, 184); */
   width: 80%;
   height: 100vh;
   display: flex;
