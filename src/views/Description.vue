@@ -1,7 +1,7 @@
 <template>
   <div class="description-view">
     <Header />
-    <div class="description">
+    <div class="description" v-if="event">
       <div class="info">
         <div class="disc-event-name">{{ event.name }}</div>
         <div class="disc-event-date">{{ event.date }} {{ event.time }}</div>
