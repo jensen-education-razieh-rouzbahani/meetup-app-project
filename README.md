@@ -35,11 +35,6 @@ docker push registry.heroku.com/meetup-app-project/web
 ```
 heroku container:release --app meetup-app-project web
 ```
-## heroku link
-```
-[heroku link](https://meetup-app-project.herokuapp.com/)
-```
-
 
 ## Project setup
 ```
